@@ -8,12 +8,13 @@ public class JavaGit {
             egyébként nem
         */    
         final int HIDEG_HATAR = 10;
-        int fok = 7;
+        int fok = 17;
         boolean hidegVan = fok < HIDEG_HATAR;
-        String viszek = "nem viszek kabátot";
-        String nemViszek = "nem viszek kabátot";
+        String eredmeny = "nem viszek kabátot";
         /*ternalis operatorral:*/
-        String eredmeny = hidegVan ? viszek : nemViszek;
+        eredmeny = hidegVan ? eredmeny : "nem " + eredmeny;
+        
+        System.out.println(eredmeny);
     
     }
     
